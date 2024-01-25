@@ -58,7 +58,7 @@
 //     headers: {
 //       "Content-Type": "application/json",
 //       Authorization:
-//         "Bearer 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", // Replace with your OpenAI API key
+//         "Bearer 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", // Replace with your OpenAI API key
 //     },
 //   };
 
@@ -112,12 +112,12 @@ async function getSummaryFromYouTubeUrl(youtubeUrl, lang = "en") {
     // Display the question to the user
     // alert(`Generated Question: ${question}`);
     const summaryPara = document.getElementById("SummarySpace");
-    summaryPara.innerText =`Generated Question: ${question}`;
+    summaryPara.innerText = `Generated Question: ${question}`;
   } catch (error) {
     console.error("Error:", error.message);
     // alert("Error getting summary. Please check the console for more details.");
     const summaryPara = document.getElementById("SummarySpace");
-    summaryPara.innerText =`Error getting summary. Please check the console for more details.`;
+    summaryPara.innerText = `Error getting summary. Please check the console for more details.`;
   }
 }
 
@@ -139,7 +139,7 @@ async function generateQuestionFromTranscript(text) {
     headers: {
       "Content-Type": "application/json",
       Authorization:
-        "Bearer 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", // Replace with your OpenAI API key
+        "Bearer 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", // Replace with your OpenAI API key
     },
   };
 

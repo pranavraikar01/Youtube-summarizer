@@ -73,7 +73,7 @@ async function generateOpenaiRelevanceIndex(title, text) {
     headers: {
       "Content-Type": "application/json",
       Authorization:
-        "Bearer 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", // Replace with your OpenAI API key
+        "Bearer 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", // Replace with your OpenAI API key
     },
   };
 
@@ -89,7 +89,7 @@ async function generateOpenaiRelevanceIndex(title, text) {
     // Display the content and the number of matching words
     // alert(`${content} according to AI \n`);
     const summaryPara = document.getElementById("SummarySpace");
-    summaryPara.innerText =`${content} according to AI \n`;
+    summaryPara.innerText = `${content} according to AI \n`;
   } catch (error) {
     throw new Error(`OpenAI API Error: ${error.response.data.error.message}`);
   }
